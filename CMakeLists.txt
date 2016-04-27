@@ -33,4 +33,6 @@ ELSE()
 
     configure_file(CMake/curlcppConfig.cmake.in
       ${CURLCPP_BINARY_DIR}/curlcppConfig.cmake @ONLY)
+
+    install( FILES ${CURLCPP_BINARY_DIR}/curlcppConfig.cmake DESTINATION . )
 ENDIF()
